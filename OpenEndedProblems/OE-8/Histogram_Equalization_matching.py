@@ -9,6 +9,7 @@ def process_and_display_image(image_path, reference_image_path=None, image_label
     Reads an image, applies Histogram Equalization and Histogram Matching,
     prints the mean and std deviation, and plots the results.
     """
+    
     # 1. Load the original image in grayscale
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if img is None:
